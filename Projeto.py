@@ -10,6 +10,11 @@ from sklearn.model_selection import train_test_split
 df = pd.read_csv('data_science_student_marks.csv')
 
 # Definir features e target
+
+# features = horas, de estudo/dia, horas de son/noite, horas de atividade fisica/dia, niveis de estressa.#
+# target = GPA - nivel de desempenho academico , de 0 a 4 em escala. 
+
+
 features = ['sql_marks', 'excel_marks', 'power_bi_marks', 'english_marks', 'age']
 X = df[features]
 y = df['python_marks']
